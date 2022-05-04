@@ -8,9 +8,13 @@ function App() {
 
 	useEffect(() => {
 		(async () => {
+      try{
 			const response = await fetch(employeesUrl);
 			const _employees = await response.json();
 			setEmployees(_employees);
+    } catch (e) {
+      console.log(e.message);
+    }
 		})();
 	}, []);
 	return (
