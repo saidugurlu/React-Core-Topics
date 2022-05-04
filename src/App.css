@@ -1,4 +1,10 @@
-.App {
-  text-align: center;
+body {
+  background-color: #333;
+
 }
 
+.App {
+  color: #ccc;
+  padding: 30px;
+  font-size: 2rem;
+}
