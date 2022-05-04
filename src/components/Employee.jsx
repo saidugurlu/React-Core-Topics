@@ -1,11 +1,5 @@
-import React from 'react'
+export const Employee = ({ emp }) => {
+  return <div className="employee">{`${emp.firstName} ${emp.lastName}`}</div>;
+};
 
-function Employee({emp}) {
-  return (
-    <div key={index} className="employee">
-                {`${emp.firstName} ${emp.lastName}`}
-            </div>
-  )
-}
-
-export default Employee
+export default Employee;
