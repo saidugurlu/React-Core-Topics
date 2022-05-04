@@ -1,13 +1,12 @@
 import React from 'react'
+import { Employee } from './Employee';
 
 function Employees({employees}) {
   return (
     <div className="employees">
     {employees.map((emp, index) => {
         return (
-            <div key={index} className="employee">
-                {`${emp.firstName} ${emp.lastName}`}
-            </div>
+            <Employee key={index} emp={emp} />
         );
     })}
 </div>
