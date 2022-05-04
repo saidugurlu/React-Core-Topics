@@ -1,5 +1,7 @@
-export const Employee = ({ emp }) => {
-  return <div className="employee">{`${emp.firstName} ${emp.lastName}`}</div>;
+export const Employee = ({ employee }) => {
+  return (
+    <div className="employee">
+      {`${employee.firstName} ${employee.lastName}`}
+    </div>
+  );
 };
-
-export default Employee;
